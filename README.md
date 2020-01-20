@@ -1,4 +1,4 @@
-<p align="center"><a href="https://gdgikorodu.com/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/gdg-google-developer-group-logo.svg" width="400"></a></p>
+<p align="center"><a href="https://gdgikorodu.com/" target="_blank"><img src="https://sites.google.com/a/gtugs.org/www/_/rsrc/1336171376680/resources/gdg-logo/GDG-program-logo.png?height=113&width=320" width="400"></a></p>
 
 
 <p align="center">
