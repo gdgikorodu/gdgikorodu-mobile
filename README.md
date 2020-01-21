@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<a href="https://codemagic.io/apps/5e1b5ea9d24ec401251955d3/5e1b5ea9d24ec401251955d2/latest_build"><img src="https://api.codemagic.io/apps/5e1b5ea9d24ec401251955d3/5e1b5ea9d24ec401251955d2/status_badge.svg" alt="Build Status"></a>
+<a href="https://codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/latest_build"><img src="https://api.codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/status_badge.svg" alt="Build Status"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
 <a href="https://gdgikorodu.com/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Community"></a>
 <a href="https://twitter.com/intent/follow?screen_name=gdgikorodu"><img src="https://img.shields.io/twitter/follow/gdgikorodu.svg?style=social&label=Follow" alt="Follow on twitter"></a>
