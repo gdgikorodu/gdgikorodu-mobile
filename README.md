@@ -13,10 +13,7 @@
 
 > **Note:** This repository contains the code of the mobile app for the GDG-IKORODU. To find out more about GDG-IKORODU, visit the [GDG-IKORODU website](https://gdgikorodu.com).
 
-GdgIkorodu is the official mobile app for GDG-IKORODU. MusicBrainz for Android
-lets users search metadata all of the the metadata available on MusicBrainz. Users
-can scan barcode to search albums. Registered users can view, edit and modify their collections. 
-Users can also tag their audio files. This application is developed with Flutter.
+GdgIkorodu is the official mobile app for GDG-IKORODU. This application is developed with Flutter.
 Flutter is Google's SDK for crafting beautiful, fast user experiences for
 mobile, web and desktop from a single codebase. Flutter works with existing
 code, is used by developers and organizations around the world, and is free

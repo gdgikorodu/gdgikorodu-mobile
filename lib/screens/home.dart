@@ -15,7 +15,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   _launchURL() async {
     const url = 'https://github.com/Mastersam07/gdgikorodu-mobile';
     if (await canLaunch(url)) {
@@ -36,19 +35,27 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         title: Text(widget.title),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.star), onPressed: () {
-            _launchURL();
-          }),
-          IconButton(icon: Icon(Icons.share), onPressed: () {
-            Share.share(
-                'check out my wa status downloader https://bit.ly/wa_status_downloader',
-                subject: 'Look what I made!');
-          }),
+          IconButton(
+              icon: Icon(Icons.star),
+              onPressed: () {
+                _launchURL();
+              }),
+          IconButton(
+              icon: Icon(Icons.share),
+              onPressed: () {
+                Share.share(
+                    'check out my wa status downloader https://bit.ly/wa_status_downloader',
+                    subject: 'Look what I made!');
+              }),
           IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
         ],
       ),
       body: Center(
         child: Text('Home'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.feedback),
+        onPressed: () {},
       ),
       drawer: Drawer(
         child: MyDrawer(),
