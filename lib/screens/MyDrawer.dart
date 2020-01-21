@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-// import 'package:gdgikorodu/utils/custom_icons_icons.dart' as CustomIcons;
 
 class MyDrawer extends StatefulWidget {
   @override

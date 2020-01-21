@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/MyDrawer.dart';
+import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
@@ -13,6 +15,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  _launchURL() async {
+    const url = 'https://github.com/Mastersam07/gdgikorodu-mobile';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,8 +36,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         title: Text(widget.title),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.star), onPressed: () {}),
-          IconButton(icon: Icon(Icons.share), onPressed: () {}),
+          IconButton(icon: Icon(Icons.star), onPressed: () {
+            _launchURL();
+          }),
+          IconButton(icon: Icon(Icons.share), onPressed: () {
+            Share.share(
+                'check out my wa status downloader https://bit.ly/wa_status_downloader',
+                subject: 'Look what I made!');
+          }),
           IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
         ],
       ),
