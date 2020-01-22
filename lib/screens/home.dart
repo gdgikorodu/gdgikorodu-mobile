@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/MyDrawer.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:gdgikorodu/screens/gdghome.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
@@ -50,11 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
         ],
       ),
-      body: Center(
-        child: Text('Home'),
-      ),
+      body: GdgHome(),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.feedback),
+        child: Icon(Icons.mail),
         onPressed: () {},
       ),
       drawer: Drawer(
