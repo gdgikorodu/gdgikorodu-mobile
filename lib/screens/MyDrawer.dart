@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
 import 'package:gdgikorodu/screens/gdghome.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'sponsors.dart';
+import 'sponsors_page.dart';
+import 'team_page.dart';
 
 class MyDrawer extends StatefulWidget {
   @override
@@ -86,7 +87,12 @@ class MyDrawerState extends State<MyDrawer> {
             'Organizers',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => TeamPage()),
+            );
+          },
         ),
         ListTile(
           leading: Icon(Icons.group),
