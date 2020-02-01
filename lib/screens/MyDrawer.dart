@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
 import 'package:gdgikorodu/screens/gdghome.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'sponsors.dart';
 
 class MyDrawer extends StatefulWidget {
   @override
@@ -112,7 +113,12 @@ class MyDrawerState extends State<MyDrawer> {
             'Sponsors',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SponsorPage()),
+            );
+          },
         ),
         ListTile(
           leading: Icon(Icons.insert_drive_file),
