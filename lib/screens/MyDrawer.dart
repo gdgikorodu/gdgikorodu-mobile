@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gdgikorodu/screens/Events.dart';
+import 'package:gdgikorodu/screens/gdghome.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -46,45 +48,87 @@ class MyDrawerState extends State<MyDrawer> {
         ),
         ListTile(
           leading: Icon(Icons.home),
-          title: Text('Home GDG', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Home GDG',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {
+            GdgHome();
+          },
         ),
         ListTile(
           leading: Icon(Icons.home),
-          title: Text('WTM Ikorodu', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'WTM Ikorodu',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
         ListTile(
-          leading: Icon(Icons.calendar_today),
-          title: Text('Events', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+            leading: Icon(Icons.calendar_today),
+            title: Text(
+              'Events',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => EventsPage()),
+              );
+            }),
+        Divider(
+          thickness: 2.0,
         ),
-        Divider(thickness: 2.0,),
         ListTile(
           leading: Icon(Icons.group),
-          title: Text('Organizers', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Organizers',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
+        ),
+        ListTile(
+          leading: Icon(Icons.group),
+          title: Text(
+            'Members',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
         ListTile(
           leading: Icon(Icons.thumb_up),
-          title: Text('Social Media Platform', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Social Media Platform',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
-        Divider(thickness: 2.0,),
+        Divider(
+          thickness: 2.0,
+        ),
         ListTile(
           leading: Icon(Icons.credit_card),
-          title: Text('Sponsors', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Sponsors',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
         ListTile(
           leading: Icon(Icons.insert_drive_file),
-          title: Text('Register', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Register',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
         ListTile(
           leading: Icon(Icons.people),
-          title: Text('Mailing List', style: TextStyle(fontWeight: FontWeight.bold),),
-          onTap: (){},
+          title: Text(
+            'Mailing List',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {},
         ),
       ],
     );

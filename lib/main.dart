@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/home.dart';
+import 'package:gdgikorodu/screens/gdghome.dart';
 
 void main() => runApp(
   MyApp(),
 );
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
+  static const String routeName = "/";
+  @override
+  MyAppState createState() => new MyAppState();
+}
+
+class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

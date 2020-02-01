@@ -45,8 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.share),
               onPressed: () {
                 Share.share(
-                    'check out my wa status downloader https://bit.ly/wa_status_downloader',
-                    subject: 'Look what I made!');
+                    'check out gdg ikorodu mobile app https://bit.ly/wa_status_downloader',
+                    subject: 'GDG IKORODU MOBILE');
               }),
           IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
         ],
