@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:gdgikorodu/utils/dev_scaffold.dart';
 
-class RegisterPage extends StatelessWidget {
-  static const String routeName = "/register";
+class BlogPage extends StatelessWidget {
+  static const String routeName = "/blog";
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class RegisterPage extends StatelessWidget {
         clearCache: false,
         appCacheEnabled: true,
       ),
-      title: "Join Us",
+      title: "Blog",
     );
   }
 }

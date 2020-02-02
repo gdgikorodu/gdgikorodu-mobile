@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
+import 'package:gdgikorodu/screens/Resources.dart';
 import 'package:gdgikorodu/screens/gdghome.dart';
 import 'package:gdgikorodu/screens/register.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'sponsors_page.dart';
-import 'team_page.dart';
-import 'social_media.dart';
+import 'package:gdgikorodu/screens/sponsors_page.dart';
+import 'package:gdgikorodu/screens/team_page.dart';
+import 'package:gdgikorodu/screens/social_media.dart';
 
 class MyDrawer extends StatefulWidget {
   @override
@@ -97,12 +98,17 @@ class MyDrawerState extends State<MyDrawer> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.group),
+          leading: Icon(Icons.credit_card),
           title: Text(
-            'Members',
+            'Sponsors',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SponsorPage()),
+            );
+          },
         ),
         ListTile(
           leading: Icon(Icons.thumb_up),
@@ -121,15 +127,15 @@ class MyDrawerState extends State<MyDrawer> {
           thickness: 2.0,
         ),
         ListTile(
-          leading: Icon(Icons.credit_card),
+          leading: Icon(Icons.perm_media),
           title: Text(
-            'Sponsors',
+            'Resources',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SponsorPage()),
+              MaterialPageRoute(builder: (context) => ResourcesPage()),
             );
           },
         ),
@@ -145,14 +151,6 @@ class MyDrawerState extends State<MyDrawer> {
               MaterialPageRoute(builder: (context) => RegisterPage()),
             );
           },
-        ),
-        ListTile(
-          leading: Icon(Icons.people),
-          title: Text(
-            'Mailing List',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          onTap: () {},
         ),
       ],
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class EventsPage extends StatefulWidget {
+  static const String routeName = "/events";
   @override
   EventsPageState createState() => new EventsPageState();
 }
@@ -14,21 +15,30 @@ class EventsPageState extends State<EventsPage> {
         child: Scaffold(
           appBar: AppBar(
             title: Text('Events'),
-            backgroundColor: Colors.redAccent,
+            actions: <Widget>[
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.star,
+                  size: 20,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.share,
+                  size: 20,
+                ),
+              ),
+            ],
             bottom: TabBar(tabs: [
-              Container(
-                height: 30.0,
-                child: Text(
-                  'Upcoming',
-                ),
-              ),
-              Container(
-                height: 30.0,
-                child: Text(
-                  'Past',
-                ),
-              ),
+              Tab(child: Text('Upcoming'),),
+              Tab(child: Text('Past'),),
             ]),
+          ),
+          floatingActionButton: FloatingActionButton(
+            child: Icon(Icons.mail),
+            onPressed: () {},
           ),
         ),
       ),
