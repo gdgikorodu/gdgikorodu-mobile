@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
 import 'package:gdgikorodu/screens/gdghome.dart';
+import 'package:gdgikorodu/screens/register.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'sponsors_page.dart';
 import 'team_page.dart';
@@ -138,7 +139,12 @@ class MyDrawerState extends State<MyDrawer> {
             'Register',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RegisterPage()),
+            );
+          },
         ),
         ListTile(
           leading: Icon(Icons.people),

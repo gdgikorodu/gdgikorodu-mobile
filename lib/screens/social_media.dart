@@ -72,6 +72,19 @@ class SocialPage extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
+          Card(
+            child: ListTile(
+              leading: Icon(FontAwesomeIcons.female),
+              onTap: () => _launchURL(),
+              title: Text(
+                'Women Techmakers',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
         ],
       ),
       title: "Social Me",
