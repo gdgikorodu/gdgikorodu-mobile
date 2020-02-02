@@ -51,6 +51,10 @@ class DevScaffold extends StatelessWidget {
             ],
           ),
           body: body,
+          floatingActionButton: FloatingActionButton(
+            child: Icon(Icons.mail),
+            onPressed: () {},
+          ),
         ),
       ),
     );

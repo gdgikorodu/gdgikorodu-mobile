@@ -37,18 +37,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: <Widget>[
           IconButton(
-              icon: Icon(Icons.star),
+              icon: Icon(
+                Icons.star,
+                size: 20,
+              ),
               onPressed: () {
                 _launchURL();
               }),
           IconButton(
-              icon: Icon(Icons.share),
+              icon: Icon(
+                Icons.share,
+                size: 20,
+              ),
               onPressed: () {
                 Share.share(
                     'check out gdg ikorodu mobile app https://bit.ly/wa_status_downloader',
                     subject: 'GDG IKORODU MOBILE');
               }),
-          IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
         ],
       ),
       body: GdgHome(),
