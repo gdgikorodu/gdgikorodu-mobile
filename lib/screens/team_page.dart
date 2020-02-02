@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdgikorodu/utils//dev_scaffold.dart';
 
 class TeamPage extends StatelessWidget {
-  static const String routeName = "/sponsor";
+  static const String routeName = "/team";
 
   @override
   Widget build(BuildContext context) {

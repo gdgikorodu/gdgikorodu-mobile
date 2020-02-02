@@ -4,6 +4,7 @@ import 'package:gdgikorodu/screens/gdghome.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'sponsors_page.dart';
 import 'team_page.dart';
+import 'social_media.dart';
 
 class MyDrawer extends StatefulWidget {
   @override
@@ -108,7 +109,12 @@ class MyDrawerState extends State<MyDrawer> {
             'Social Media Platform',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SocialPage()),
+            );
+          },
         ),
         Divider(
           thickness: 2.0,
