@@ -11,6 +11,8 @@ class RegisterPage extends StatelessWidget {
       body: WebviewScaffold(
         url: 'https://www.meetup.com/gdg_ikorodu/',
         hidden: true,
+        clearCache: false,
+        appCacheEnabled: true,
       ),
       title: "Join Us",
     );
