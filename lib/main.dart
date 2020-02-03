@@ -6,10 +6,11 @@ import 'package:gdgikorodu/screens/home.dart';
 import 'package:gdgikorodu/screens/register.dart';
 import 'package:gdgikorodu/screens/sponsors_page.dart';
 import 'package:gdgikorodu/screens/team_page.dart';
+import 'package:gdgikorodu/utils/community.dart';
 
 void main() => runApp(
-  MyApp(),
-);
+      MyApp(),
+    );
 
 class MyApp extends StatefulWidget {
   static const String routeName = "/";
@@ -24,9 +25,22 @@ class MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'GDGIkorodu',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        //* Custom Google Font
+        fontFamily: Community.google_sans_family,
+        primarySwatch: Colors.red,
+        primaryColor: Colors.white,
+        disabledColor: Colors.grey,
+        cardColor: Colors.white,
+        canvasColor: Colors.grey[50],
+        brightness: Brightness.light,
+        buttonTheme: Theme.of(context)
+            .buttonTheme
+            .copyWith(colorScheme: ColorScheme.light()),
+        appBarTheme: AppBarTheme(
+          elevation: 0.0,
+        ),
       ),
-      home: MyHomePage(title: 'GDGIkorodu'),
+      home: MyHomePage(title: 'Home'),
       routes: {
         BlogPage.routeName: (context) => BlogPage(),
         EventsPage.routeName: (context) => EventsPage(),
