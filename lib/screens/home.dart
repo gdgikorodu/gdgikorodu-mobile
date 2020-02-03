@@ -30,7 +30,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Center(child: Text(widget.title)),
+        title: Text(widget.title),
+        centerTitle: true,
         actions: <Widget>[
           IconButton(
               icon: Icon(

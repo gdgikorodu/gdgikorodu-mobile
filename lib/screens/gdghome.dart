@@ -177,7 +177,7 @@ class GdgHome extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             ImageCard(
-              img: Community.banner_light,
+              img: Community.home_img,
             ),
             SizedBox(
               height: 20,
