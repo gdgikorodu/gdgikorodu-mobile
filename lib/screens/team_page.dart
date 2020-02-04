@@ -13,7 +13,7 @@ class TeamPage extends StatelessWidget {
   static const String routeName = "/team";
 
 
-  Widget socialActions(context) => FittedBox(
+  Widget socialActions(context, Team teams) => FittedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -23,7 +23,7 @@ class TeamPage extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(teams[0].fbUrl);
+                launch(teams.fbUrl);
               },
             ),
             IconButton(
@@ -32,7 +32,7 @@ class TeamPage extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(teams[0].twitterUrl);
+                launch(teams.twitterUrl);
               },
             ),
             IconButton(
@@ -41,7 +41,7 @@ class TeamPage extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(teams[0].linkedinUrl);
+                launch(teams.linkedinUrl);
               },
             ),
             IconButton(
@@ -50,7 +50,7 @@ class TeamPage extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(teams[0].githubUrl);
+                launch(teams.githubUrl);
               },
             ),
           ],
@@ -122,7 +122,7 @@ class TeamPage extends StatelessWidget {
                             teams[i].contribution,
                             style: Theme.of(context).textTheme.caption,
                           ),
-                          socialActions(context),
+                          socialActions(context, teams[i]),
                         ],
                       ),
                     )

@@ -35,15 +35,15 @@ class Team {
 
   Team(
       {this.name,
-        this.desc,
-        this.job,
-        this.image,
-        this.speciality,
-        this.fbUrl,
-        this.twitterUrl,
-        this.linkedinUrl,
-        this.githubUrl,
-        this.contribution});
+      this.desc,
+      this.job,
+      this.image,
+      this.speciality,
+      this.fbUrl,
+      this.twitterUrl,
+      this.linkedinUrl,
+      this.githubUrl,
+      this.contribution});
 
   Team.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -80,37 +80,96 @@ List<Team> teams = [
     desc: "Organizer",
     contribution: "Software Engineer",
     image:
-    "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
   ),
   Team(
     name: "Davis Omokaro",
     desc: "Co-Organizer",
     contribution: "Software Engineer",
     image: "https://avatars2.githubusercontent.com/u/10599101?s=460&v=4",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
   ),
   Team(
     name: "Judith Oiku",
     desc: "Co-Organizer",
     contribution: "Software Engineer / WTM Lead Ikorodu",
     image:
-    "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76bcaaa7ea43100043c836%2F400x400.jpg%3Ffit%3Dscale%26background%3D000000",
+        "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76bcaaa7ea43100043c836%2F400x400.jpg%3Ffit%3Dscale%26background%3D000000",
+    githubUrl: "https://github.com/ojudith",
+    linkedinUrl: "https://www.linkedin.com/in/oiku-judith-o-ba5307159",
+    twitterUrl: " https://mobile.twitter.com/OseJudith",
   ),
   Team(
     name: "Benjamin Ajewole",
     desc: "Co-Organizer",
     contribution: "Software Engineer",
     image:
-    "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+        "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
   ),
   Team(
     name: "Samuel Abada",
     desc: "Organizer",
     contribution: "Random Niggur",
     image:
-    "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+        "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
     fbUrl: "https://facebook.com/imthepk",
     githubUrl: "https://github.com/mastersam07",
     linkedinUrl: "https://www.linkedin.com/in/abada-samuel/",
     twitterUrl: "https://twitter.com/mastersam_",
+  ),
+  Team(
+    name: "Luqman Oluwatosin",
+    desc: "Organizer",
+    contribution: "Software Developer",
+    image:
+        "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
+  ),
+  Team(
+    name: "Ejiro Onose",
+    desc: "Organizer",
+    contribution: "AI/ML Developer",
+    image:
+        "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
+  ),
+  Team(
+    name: "Dotun",
+    desc: "Organizer",
+    contribution: "UI/UX Designer",
+    image:
+        "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
+  ),
+  Team(
+    name: "Mishael Kama",
+    desc: "Organizer",
+    contribution: "Software Engineer",
+    image:
+        "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+    fbUrl: "https://facebook.com/kelvin.kehinde",
+    githubUrl: "https://github.com/olakehinde",
+    linkedinUrl: "https://linkedin.com/in/olakehinde",
+    twitterUrl: "https://twitter.com/olakehinde_",
   ),
 ];
