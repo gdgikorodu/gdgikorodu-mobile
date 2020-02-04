@@ -1,0 +1,58 @@
+{
+  "teams": [
+    {
+      "name": "Olamide Kehinde",
+      "desc": "Organizer",
+      "contribution": "Software Engineer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Olamide.jpeg?token=AHOTTJNLVSAHNSKTHZDBB225265NW"
+    },
+    {
+      "name": "Davis Omokaro",
+      "desc": "Co-Organizer",
+      "contribution": "Software Engineer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Davis.jpeg?token=AHOTTJLLF4VNBX2QVUZLLFK5265OA"
+    },
+    {
+      "name": "Judith Oiku",
+      "desc": "Co-Organizer",
+      "contribution": "Software Engineer / WTM Lead Ikorodu",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Judith.jpeg?token=AHOTTJJCRSYF2WLN567LUH25265N4"
+    },
+    {
+      "name": "Benjamin Ajewole",
+      "desc": "Co-Organizer",
+      "contribution": "Software Engineer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Rexben.jpeg?token=AHOTTJK34N4JOWYA4XHX7HS5265OG"
+    },
+    {
+      "name": "Samuel Abada",
+      "desc": "Organizer",
+      "contribution": "Software Developer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Samuel.jpeg?token=AHOTTJOMQFBPWGL3H53OI625265OM"
+    },
+    {
+      "name": "Luqman Oluwatosin",
+      "desc": "Organizer",
+      "contribution": "Software Developer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Luqman.jpeg?token=AHOTTJJWJH2H3PCZSMVCGS25265OS"
+    },
+    {
+      "name": "Ejiro Onose",
+      "desc": "Organizer",
+      "contribution": "AI/ML Developer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Ejiro.jpeg?token=AHOTTJIEMCRETWLQFLKB7225267BK"
+    },
+    {
+      "name": "Dotun",
+      "desc": "Organizer",
+      "contribution": "UI/UX Designer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Dotun.jpeg?token=AHOTTJJ3R7YYLZKISDP3H4C5267BQ"
+    },
+    {
+      "name": "Mishael Kama",
+      "desc": "Organizer",
+      "contribution": "Software Engineer",
+      "image": "https://raw.githubusercontent.com/Mastersam07/MyFiles/master/team/Kama.jpeg?token=AHOTTJPHFBEMEMYQY4E2ZZK5267BY"
+    }
+  ]
+}
