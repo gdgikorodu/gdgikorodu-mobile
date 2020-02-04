@@ -30,6 +30,17 @@ extensible and open development model.
 * Productive development
 * Extensible and open model
 
+## Beta Version
+
+Kindly download our beta version and give us feedback on how to improve the app.
+
+* Tap on the button below(it will take you to another page)
+* Scroll down the page to download `apk-release.apk`
+
+<br>
+<a href=""><img src="https://playerzon.com/asset/download.png" width="200"></a>
+<br>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
