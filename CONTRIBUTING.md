@@ -11,6 +11,8 @@ patches and features.
 
 ## Using the issue tracker
 
+> **Note:** Please don't file an issue to ask a question. It will be better to follow the laid out guide.
+
 The issue tracker is the preferred channel for [bug reports](#bugs),
 [features requests](#features) and [submitting pull
 requests](#pull-requests), but please respect the following restrictions:
