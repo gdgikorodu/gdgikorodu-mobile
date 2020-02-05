@@ -1,45 +1,48 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:gdgikorodu/utils/dev_scaffold.dart';
+import 'package:gdgikorodu/utils/tools.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class EventsPage extends StatefulWidget {
+class EventsPage extends StatelessWidget {
   static const String routeName = "/events";
-  @override
-  EventsPageState createState() => new EventsPageState();
-}
 
-class EventsPageState extends State<EventsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: DefaultTabController(
-        length: 2,
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text('Events'),
-            actions: <Widget>[
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.star,
-                  size: 20,
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.share,
-                  size: 20,
-                ),
-              ),
-            ],
-            bottom: TabBar(tabs: [
-              Tab(child: Text('Upcoming'),),
-              Tab(child: Text('Past'),),
-            ]),
+    return DefaultTabController(
+      length: 2,
+      child: DevScaffold(
+        title: "Events",
+        tabBar: TabBar(
+          indicatorSize: TabBarIndicatorSize.label,
+          indicatorColor: Tools.multiColors[Random().nextInt(4)],
+          labelStyle: TextStyle(
+            fontSize: 12,
           ),
-          floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.mail),
-            onPressed: () {},
-          ),
+          isScrollable: false,
+          tabs: <Widget>[
+            Tab(
+              child: Text("Upcoming Events"),
+              icon: Icon(
+                FontAwesomeIcons.book,
+                size: 12,
+              ),
+            ),
+            Tab(
+              child: Text("Past Events"),
+              icon: Icon(
+                FontAwesomeIcons.book,
+                size: 12,
+              ),
+            ),
+          ],
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            Center(child: Text('Upcoming Events')),
+            Center(child: Text('Past Events'))
+          ],
         ),
       ),
     );
