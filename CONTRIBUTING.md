@@ -103,7 +103,7 @@ merged:
    feature to tidy up your commits before making them public.
    
 5. Ensure that your commits are signed/verified. You may want to check this guideline on 
-   [signing github commits](https://help.github.com/en/enterprise/2.17/user/github/authenticating-to-github/signing-commits)
+   [signing github commits with gpg-key](https://help.github.com/en/enterprise/2.17/user/github/authenticating-to-github/signing-commits) and [generating a new gpg-key](https://help.github.com/en/enterprise/2.17/user/github/authenticating-to-github/generating-a-new-gpg-key)
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
