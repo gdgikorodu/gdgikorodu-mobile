@@ -41,7 +41,7 @@ class GdgHome extends StatelessWidget {
     spacing: 10.0,
     children: <Widget>[
       RaisedButton(
-        child: Text("Blog"),
+        child: Text("Website"),
         shape: StadiumBorder(),
         color: Colors.red,
         colorBrightness: Brightness.dark,
@@ -93,13 +93,13 @@ class GdgHome extends StatelessWidget {
     runSpacing: 20.0,
     children: <Widget>[
       ActionCard(
-        icon: Icons.schedule,
+        icon: Icons.open_in_new,
         color: Colors.red,
         title: Community.blog_text,
         onPressed: () => Navigator.pushNamed(context, BlogPage.routeName),
       ),
       ActionCard(
-        icon: Icons.person,
+        icon: Icons.schedule,
         color: Colors.green,
         title: Community.events_text,
         onPressed: () =>

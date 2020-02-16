@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class Community {
   static const String app_name = "GDG-Ikorodu";
-  static const String app_version = "Version 1.0.6";
+  static const String app_version = "Beta Version";
   static const int app_version_code = 1;
   static const String app_color = "#ffd7167";
   static Color primaryAppColor = Colors.white;
@@ -58,7 +58,7 @@ class Community {
       "It seems like your internet connection is not active.";
 
   //* ActionTexts
-  static const String blog_text = "Blog";
+  static const String blog_text = "Website";
   static const String events_text = "Events";
   static const String team_text = "Team";
   static const String sponsor_text = "Sponsors";

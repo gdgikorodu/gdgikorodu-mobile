@@ -7,10 +7,22 @@ import 'package:gdgikorodu/screens/register.dart';
 import 'package:gdgikorodu/screens/sponsors_page.dart';
 import 'package:gdgikorodu/screens/team_page.dart';
 import 'package:gdgikorodu/utils/community.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(
-      MyApp(),
-    );
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ),
+  );
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  runApp(
+    MyApp(),
+  );
+}
 
 class MyApp extends StatefulWidget {
   static const String routeName = "/";

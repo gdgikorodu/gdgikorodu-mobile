@@ -1,4 +1,4 @@
-<p align="center"><a href="https://gdgikorodu.com/" target="_blank"><img src="https://sites.google.com/a/gtugs.org/www/_/rsrc/1336171376680/resources/gdg-logo/GDG-program-logo.png?height=113&width=320" width="400"></a></p>
+<p align="center"><a href="https://gdgikorodu.com/" target="_blank"><img src="https://res.cloudinary.com/gdgikorodu-com/image/upload/v1580923567/gdg-logo_aistw5.png?height=113&width=320" width="400"></a></p>
 
 
 <p align="center">
