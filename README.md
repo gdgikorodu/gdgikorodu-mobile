@@ -38,7 +38,7 @@ Kindly download our beta version and give us feedback on how to improve the app.
 * Scroll down the page to download `apk-release.apk`
 
 <br>
-<a href=""><img src="https://playerzon.com/asset/download.png" width="200"></a>
+<a href=https://github.com/gdgikorodu/gdgikorodu-mobile/releases/tag/v0.7-alpha><img src="https://playerzon.com/asset/download.png" width="200"></a>
 <br>
 
 ## Getting Started
