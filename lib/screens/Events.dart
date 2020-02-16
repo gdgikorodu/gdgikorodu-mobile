@@ -1,7 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
+import 'package:gdgikorodu/assets/incomingevents.dart';
 import 'package:gdgikorodu/utils/dev_scaffold.dart';
+import 'dart:math';
 import 'package:gdgikorodu/utils/tools.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -11,7 +11,7 @@ class EventsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 1,
       child: DevScaffold(
         title: "Events",
         tabBar: TabBar(
@@ -23,14 +23,7 @@ class EventsPage extends StatelessWidget {
           isScrollable: false,
           tabs: <Widget>[
             Tab(
-              child: Text("Upcoming Events"),
-              icon: Icon(
-                FontAwesomeIcons.book,
-                size: 12,
-              ),
-            ),
-            Tab(
-              child: Text("Past Events"),
+              child: Text("All Events"),
               icon: Icon(
                 FontAwesomeIcons.book,
                 size: 12,
@@ -40,8 +33,7 @@ class EventsPage extends StatelessWidget {
         ),
         body: TabBarView(
           children: <Widget>[
-            Center(child: Text('Upcoming Events')),
-            Center(child: Text('Past Events'))
+            IncomingEvents(),
           ],
         ),
       ),

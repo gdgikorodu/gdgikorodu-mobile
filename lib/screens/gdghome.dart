@@ -41,7 +41,7 @@ class GdgHome extends StatelessWidget {
     spacing: 10.0,
     children: <Widget>[
       RaisedButton(
-        child: Text("Blog"),
+        child: Text("Website"),
         shape: StadiumBorder(),
         color: Colors.red,
         colorBrightness: Brightness.dark,
