@@ -23,10 +23,10 @@ class MyDrawerState extends State<MyDrawer> {
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             color: Colors.blueAccent,
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/images/gdg-ikorodu.jpg'),
-            ),
+//            image: DecorationImage(
+//              fit: BoxFit.cover,
+//              image: AssetImage('assets/images/gdg-ikorodu.jpg'),
+//            ),
           ),
           accountName: Text(
             'GDG IKORODU',
@@ -44,17 +44,18 @@ class MyDrawerState extends State<MyDrawer> {
           ),
           currentAccountPicture: Container(
             decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.contain,
-                  image: AssetImage('assets/images/gdg-logo.jpg'),
-                )),
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                fit: BoxFit.contain,
+                image: AssetImage('assets/images/gdg-logo.jpg'),
+              ),
+            ),
           ),
         ),
         ListTile(
           leading: Icon(Icons.home),
           title: Text(
-            'Home GDG',
+            'Home',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {
@@ -62,32 +63,33 @@ class MyDrawerState extends State<MyDrawer> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.home),
+          leading: Icon(Icons.calendar_today),
           title: Text(
-            'WTM Ikorodu',
+            'Events',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => EventsPage()),
+            );
+          },
+        ),
+        ListTile(
+          leading: Icon(Icons.computer),
+          title: Text(
+            'Blog',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {},
         ),
-        ListTile(
-            leading: Icon(Icons.calendar_today),
-            title: Text(
-              'Events',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => EventsPage()),
-              );
-            }),
         Divider(
           thickness: 2.0,
         ),
         ListTile(
           leading: Icon(Icons.group),
           title: Text(
-            'Organizers',
+            'Team',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {
@@ -98,9 +100,9 @@ class MyDrawerState extends State<MyDrawer> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.credit_card),
+          leading: Icon(Icons.perm_media),
           title: Text(
-            'Sponsors',
+            'Design and Code',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {
@@ -109,6 +111,9 @@ class MyDrawerState extends State<MyDrawer> {
               MaterialPageRoute(builder: (context) => SponsorPage()),
             );
           },
+        ),
+        Divider(
+          thickness: 2.0,
         ),
         ListTile(
           leading: Icon(Icons.thumb_up),
@@ -120,35 +125,6 @@ class MyDrawerState extends State<MyDrawer> {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SocialPage()),
-            );
-          },
-        ),
-        Divider(
-          thickness: 2.0,
-        ),
-        ListTile(
-          leading: Icon(Icons.perm_media),
-          title: Text(
-            'Resources',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ResourcesPage()),
-            );
-          },
-        ),
-        ListTile(
-          leading: Icon(Icons.insert_drive_file),
-          title: Text(
-            'Register',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => RegisterPage()),
             );
           },
         ),
