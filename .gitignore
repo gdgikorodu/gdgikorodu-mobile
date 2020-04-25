@@ -39,3 +39,6 @@ lib/generated_plugin_registrant.dart
 # Keys
 key.jks
 .android/key.properties
+
+# designs
+.assets/whatsapp/
