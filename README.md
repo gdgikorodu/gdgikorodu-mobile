@@ -2,9 +2,9 @@
 
 
 <p align="center">
-<a href="https://codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/latest_build"><img src="https://api.codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/status_badge.svg" alt="Build Status"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-success.svg" alt="License"></a>
-<a href="https://gdgikorodu.com/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Community"></a>
+<a href="https://codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/latest_build"><img src="https://api.codemagic.io/apps/5e26da99f5fb1f37d17d9c30/5e26da99f5fb1f37d17d9c2f/status_badge.svg?style=flat-square" alt="Build Status"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square" alt="License"></a>
+<a href="https://gdgikorodu.com/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103&style=flat-square" alt="Community"></a>
 <a href="https://twitter.com/intent/follow?screen_name=gdgikorodu"><img src="https://img.shields.io/twitter/follow/gdgikorodu.svg?style=social&label=Follow" alt="Follow on twitter"></a>
 </p>
 
