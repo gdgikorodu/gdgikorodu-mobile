@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'package:gdgikorodu/models/event_data.dart';
 import 'dart:convert';
 
-class NewsForCorona {
+class EventsData {
   List<Event> events = [];
 
   Future<void> getEvents() async {

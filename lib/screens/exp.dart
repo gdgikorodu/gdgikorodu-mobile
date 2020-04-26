@@ -23,6 +23,8 @@ class EventsState extends State<Events> {
     setState(() {
       _loading = false;
     });
+    print('fetching results...');
+    print(eventslist);
   }
 
   @override

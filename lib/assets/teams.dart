@@ -100,12 +100,12 @@ List<Team> teams = [
   Team(
     name: "Judith Oiku",
     desc: "Co-Organizer",
-    contribution: "Software Engineer / WTM Lead Ikorodu",
+    contribution: "Software Engineer / WTM Ambassador Ikorodu",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/judith.jpg",
     githubUrl: "https://github.com/ojudith",
     linkedinUrl: "https://www.linkedin.com/in/oiku-judith-o-ba5307159",
-    twitterUrl: " https://mobile.twitter.com/OseJudith",
+    twitterUrl: "https://mobile.twitter.com/OseJudith",
   ),
   Team(
     name: "Ajadi Abiola",
@@ -119,7 +119,7 @@ List<Team> teams = [
   ),
   Team(
     name: "Benjamin Ajewole",
-    desc: "Co-Organizer",
+    desc: "Event-Organizer",
     contribution: "Software Engineer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/ben.jpg",
@@ -130,8 +130,8 @@ List<Team> teams = [
   ),
   Team(
     name: "Samuel Abada",
-    desc: "Organizer",
-    contribution: "Random Niggur",
+    desc: "Event-Organizer",
+    contribution: "Software Developer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/samuel.jpg",
     fbUrl: "https://web.facebook.com/abada.samueloghenero",
@@ -141,7 +141,7 @@ List<Team> teams = [
   ),
   Team(
     name: "Luqman Oluwatosin",
-    desc: "Organizer",
+    desc: "Event-Organizer",
     contribution: "Software Developer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/luqman.jpg",
@@ -152,7 +152,7 @@ List<Team> teams = [
   ),
   Team(
     name: "Ejiro Onose",
-    desc: "Organizer",
+    desc: "Event-Organizer",
     contribution: "AI/ML Developer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/avatar.png",
@@ -163,7 +163,7 @@ List<Team> teams = [
   ),
   Team(
     name: "Dotun",
-    desc: "Organizer",
+    desc: "Event-Organizer",
     contribution: "UI/UX Designer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/avatar.png",
@@ -174,7 +174,7 @@ List<Team> teams = [
   ),
   Team(
     name: "Mishael Kama",
-    desc: "Organizer",
+    desc: "Event-Organizer",
     contribution: "Software Engineer",
     image:
         "https://raw.githubusercontent.com/K3beros/aura/master/src/assets/img/team/avatar.png",

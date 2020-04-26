@@ -1,23 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class DevScaffold extends StatelessWidget {
   final String title;
   final Widget body;
   final Widget tabBar;
-
-  _launchURL() async {
-    const url = 'https://github.com/Mastersam07/gdgikorodu-mobile';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  final Widget drawer;
 
   const DevScaffold(
-      {Key key, @required this.body, @required this.title, this.tabBar})
+      {Key key, @required this.body, @required this.title, this.tabBar, this.drawer})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -33,9 +24,9 @@ class DevScaffold extends StatelessWidget {
             bottom: tabBar != null ? tabBar : null,
             actions: <Widget>[
               IconButton(
-                onPressed: () => _launchURL(),
+                onPressed: () {},
                 icon: Icon(
-                  Icons.star,
+                  Icons.lightbulb_outline,
                   size: 20,
                 ),
               ),
@@ -50,10 +41,7 @@ class DevScaffold extends StatelessWidget {
             ],
           ),
           body: body,
-          floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.mail),
-            onPressed: () {},
-          ),
+          drawer: drawer != null ? drawer : null,
         ),
       ),
     );

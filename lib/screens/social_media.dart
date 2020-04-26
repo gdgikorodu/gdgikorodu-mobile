@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gdgikorodu/utils//dev_scaffold.dart';
+import 'package:gdgikorodu/widgets/dev_scaffold.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gdgikorodu/widgets/dev_scaffold.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SocialPage extends StatelessWidget {
@@ -55,6 +56,19 @@ class SocialPage extends StatelessWidget {
               onTap: () => _launchURL(),
               title: Text(
                 'Meetup',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Card(
+            child: ListTile(
+              leading: Icon(FontAwesomeIcons.blog),
+              onTap: () => _launchURL(),
+              title: Text(
+                'Blog',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),

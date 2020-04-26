@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/assets/teams.dart';
-import 'package:gdgikorodu/utils/dev_scaffold.dart';
+import 'package:gdgikorodu/widgets/dev_scaffold.dart';
 import 'package:gdgikorodu/utils/tools.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';

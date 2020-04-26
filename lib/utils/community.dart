@@ -58,7 +58,7 @@ class Community {
       "It seems like your internet connection is not active.";
 
   //* ActionTexts
-  static const String blog_text = "Website";
+  static const String blog_text = "Blog";
   static const String events_text = "Events";
   static const String team_text = "Team";
   static const String sponsor_text = "Sponsors";

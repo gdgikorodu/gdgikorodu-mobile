@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
 import 'package:gdgikorodu/screens/Resources.dart';
 import 'package:gdgikorodu/screens/gdghome.dart';
-import 'package:gdgikorodu/screens/register.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:gdgikorodu/screens/sponsors_page.dart';
 import 'package:gdgikorodu/screens/team_page.dart';
 import 'package:gdgikorodu/screens/social_media.dart';
 
@@ -20,23 +18,26 @@ class MyDrawerState extends State<MyDrawer> {
       padding: EdgeInsets.zero,
       children: <Widget>[
         UserAccountsDrawerHeader(
-          decoration: BoxDecoration(
-            shape: BoxShape.rectangle,
-            color: Colors.blueAccent,
+//          decoration: BoxDecoration(
+//            shape: BoxShape.rectangle,
+//            color: Colors.blueAccent,
 //            image: DecorationImage(
 //              fit: BoxFit.cover,
 //              image: AssetImage('assets/images/gdg-ikorodu.jpg'),
 //            ),
-          ),
+//          ),
           accountName: Text(
             'GDG IKORODU',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 24.0,
+            ),
           ),
           accountEmail: InkWell(
             child: Text(
               'www.gdgikorodu.com',
               style: TextStyle(
-                  color: Colors.blueAccent,
+//                  color: Colors.blueAccent,
                   decoration: TextDecoration.underline,
                   fontSize: 18.0),
             ),
@@ -71,7 +72,9 @@ class MyDrawerState extends State<MyDrawer> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => EventsPage()),
+              MaterialPageRoute(
+                builder: (context) => EventsPage(),
+              ),
             );
           },
         ),
@@ -95,7 +98,9 @@ class MyDrawerState extends State<MyDrawer> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => TeamPage()),
+              MaterialPageRoute(
+                builder: (context) => TeamPage(),
+              ),
             );
           },
         ),
@@ -108,7 +113,9 @@ class MyDrawerState extends State<MyDrawer> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SponsorPage()),
+              MaterialPageRoute(
+                builder: (context) => ResourcesPage(),
+              ),
             );
           },
         ),
@@ -124,7 +131,9 @@ class MyDrawerState extends State<MyDrawer> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SocialPage()),
+              MaterialPageRoute(
+                builder: (context) => SocialPage(),
+              ),
             );
           },
         ),

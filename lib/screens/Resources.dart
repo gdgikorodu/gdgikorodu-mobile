@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gdgikorodu/utils/dev_scaffold.dart';
+import 'package:gdgikorodu/widgets/dev_scaffold.dart';
 
 class ResourcesPage extends StatelessWidget {
   static const String routeName = "/resources";
