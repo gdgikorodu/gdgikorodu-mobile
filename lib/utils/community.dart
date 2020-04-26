@@ -33,11 +33,12 @@ class Community {
 
   //* Images
   static const String home_img = "assets/images/gdg-logo.jpg";
+  static const String wtm_img = "assets/images/logo_wtm.png";
   static const String banner_light = "assets/images/banner_light.png";
   static const String banner_dark = "assets/images/banner_dark.png";
 
   //*  Texts
-  static const String welcomeText = "GDG IKORODU";
+  static const String welcomeText = "Welcome to GDG IKORODU";
   static const String descText =
   '''Google Developers Group Ikorodu is an initiative to concentrate the efforts of many developers in and around Ikorodu to learn, share and get productive using the various Google products.''';
 

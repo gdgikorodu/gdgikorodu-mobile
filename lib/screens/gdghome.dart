@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gdgikorodu/screens/Events.dart';
-import 'package:gdgikorodu/screens/Resources.dart';
-import 'package:gdgikorodu/screens/blog.dart';
-import 'package:gdgikorodu/screens/team_page.dart';
 import 'package:gdgikorodu/widgets/image_card.dart';
 import 'package:gdgikorodu/utils/community.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -12,16 +8,16 @@ class GdgHome extends StatelessWidget {
   static const String routeName = "/home";
   List<Widget> communityTexts(context) => [
         Text(
-          Community.welcomeText,
-          style: Theme.of(context).textTheme.headline,
-          textAlign: TextAlign.center,
-        ),
+            Community.welcomeText,
+            style: Theme.of(context).textTheme.headline,
+            textAlign: TextAlign.center,
+          ),
         SizedBox(
           height: 10,
         ),
         Text(
           Community.descText,
-          style: Theme.of(context).textTheme.caption,
+          style: Theme.of(context).textTheme.subtitle,
           textAlign: TextAlign.center,
         ),
       ];
@@ -33,89 +29,6 @@ class GdgHome extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-
-  Widget actions(context) => Wrap(
-        alignment: WrapAlignment.center,
-        spacing: 10.0,
-        children: <Widget>[
-      RaisedButton(
-        child: Text("Blog"),
-        shape: StadiumBorder(),
-        color: Colors.red,
-        colorBrightness: Brightness.dark,
-        onPressed: () => Navigator.pushNamed(context, BlogPage.routeName),
-      ),
-          RaisedButton(
-            child: Text("Events"),
-            shape: StadiumBorder(),
-            color: Colors.green,
-            colorBrightness: Brightness.dark,
-            onPressed: () => Navigator.pushNamed(context, EventsPage.routeName),
-          ),
-          RaisedButton(
-            child: Text("Team"),
-            shape: StadiumBorder(),
-            color: Colors.orange,
-            colorBrightness: Brightness.dark,
-            onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
-          ),
-//      RaisedButton(
-//        child: Text("Sponsors"),
-//        shape: StadiumBorder(),
-//        color: Colors.purple,
-//        colorBrightness: Brightness.dark,
-//        onPressed: () => Navigator.pushNamed(context, SponsorPage.routeName),
-//      ),
-          RaisedButton(
-            child: Text("Resources"),
-            shape: StadiumBorder(),
-            color: Colors.brown,
-            colorBrightness: Brightness.dark,
-            onPressed: () =>
-                Navigator.pushNamed(context, ResourcesPage.routeName),
-          ),
-        ],
-      );
-
-  Widget newActions(context) => Wrap(
-        alignment: WrapAlignment.center,
-        spacing: 20.0,
-        runSpacing: 20.0,
-        children: <Widget>[
-      ActionCard(
-        icon: Icons.open_in_new,
-        color: Colors.red,
-        title: Community.blog_text,
-        onPressed: () => Navigator.pushNamed(context, BlogPage.routeName),
-      ),
-          ActionCard(
-            icon: Icons.schedule,
-            color: Colors.green,
-            title: Community.events_text,
-            onPressed: () => Navigator.pushNamed(context, EventsPage.routeName),
-          ),
-          ActionCard(
-            icon: Icons.people,
-            color: Colors.amber,
-            title: Community.team_text,
-            onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
-          ),
-//      ActionCard(
-//        icon: Icons.attach_money,
-//        color: Colors.purple,
-//        title: Community.sponsor_text,
-//        onPressed: () =>
-//            Navigator.pushNamed(context, SponsorPage.routeName),
-//      ),
-          ActionCard(
-            icon: Icons.question_answer,
-            color: Colors.brown,
-            title: Community.resources_text,
-            onPressed: () =>
-                Navigator.pushNamed(context, ResourcesPage.routeName),
-          ),
-        ],
-      );
 
   Widget socialActions(context) => FittedBox(
         child: Row(
@@ -160,20 +73,26 @@ class GdgHome extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ImageCard(
-              img: Community.home_img,
-            ),
-            SizedBox(
-              height: 20,
-            ),
             ...communityTexts(context),
             SizedBox(
               height: 20,
             ),
-            newActions(context),
-            SizedBox(
-              height: 20,
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ImageCard(
+                    img: Community.home_img,
+                  ),
+                ),
+                SizedBox(width: 15.0,),
+                Expanded(
+                  child: ImageCard(
+                    img: Community.wtm_img,
+                  ),
+                ),
+              ],
             ),
             socialActions(context),
             SizedBox(
@@ -183,55 +102,6 @@ class GdgHome extends StatelessWidget {
               Community.app_version,
               style: Theme.of(context).textTheme.caption.copyWith(fontSize: 10),
             )
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ActionCard extends StatelessWidget {
-  final Function onPressed;
-  final IconData icon;
-  final String title;
-  final Color color;
-
-  const ActionCard({Key key, this.onPressed, this.icon, this.title, this.color})
-      : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(8),
-      onTap: onPressed,
-      child: Ink(
-        height: MediaQuery.of(context).size.height * 0.1,
-        width: MediaQuery.of(context).size.width * 0.2,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey[200],
-                blurRadius: 10,
-                spreadRadius: 5,
-              )
-            ]),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              icon,
-              color: color,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              title,
-              style: Theme.of(context).textTheme.title.copyWith(
-                    fontSize: 12,
-                  ),
-            ),
           ],
         ),
       ),

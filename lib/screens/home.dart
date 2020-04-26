@@ -25,7 +25,14 @@ class _MyHomePageState extends State<MyHomePage> {
     return DevScaffold(
       title: 'Home',
       body: GdgHome(),
-      drawer: MyDrawer(),
+      drawer: Container(
+        constraints: new BoxConstraints.expand(
+          width: MediaQuery.of(context).size.width * 0.8,
+        ),
+        color: Colors.white,
+        alignment: Alignment.center,
+        child: MyDrawer(),
+      ),
     );
   }
 }

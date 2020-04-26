@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gdgikorodu/screens/Events.dart';
 import 'package:gdgikorodu/screens/Resources.dart';
-import 'package:gdgikorodu/screens/gdghome.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:gdgikorodu/screens/blog.dart';
 import 'package:gdgikorodu/screens/team_page.dart';
 import 'package:gdgikorodu/screens/social_media.dart';
 
@@ -17,7 +16,7 @@ class MyDrawerState extends State<MyDrawer> {
     return ListView(
       padding: EdgeInsets.zero,
       children: <Widget>[
-        UserAccountsDrawerHeader(
+//        UserAccountsDrawerHeader(
 //          decoration: BoxDecoration(
 //            shape: BoxShape.rectangle,
 //            color: Colors.blueAccent,
@@ -26,32 +25,63 @@ class MyDrawerState extends State<MyDrawer> {
 //              image: AssetImage('assets/images/gdg-ikorodu.jpg'),
 //            ),
 //          ),
+//          accountName: Text(
+//            'GDG IKORODU',
+//            style: TextStyle(
+//              fontWeight: FontWeight.bold,
+//              fontSize: 24.0,
+//            ),
+//          ),
+//          accountEmail: InkWell(
+//            child: Text(
+//              'www.gdgikorodu.com',
+//              style: TextStyle(
+////                  color: Colors.blueAccent,
+//                  decoration: TextDecoration.underline,
+//                  fontSize: 18.0),
+//            ),
+//            onTap: () => launch('https://gdgikorodu.com'),
+//          ),
+//          currentAccountPicture: Container(
+//            decoration: BoxDecoration(
+//              shape: BoxShape.circle,
+//              image: DecorationImage(
+//                fit: BoxFit.contain,
+//                image: AssetImage('assets/images/gdg-logo.jpg'),
+//              ),
+//            ),
+//          ),
+//        ),
+//        DrawerHeader(
+//          child: Text('Drawer Header'),
+//          decoration: BoxDecoration(
+//            color: Colors.blue,
+//          ),
+//        ),
+        UserAccountsDrawerHeader(
           accountName: Text(
-            'GDG IKORODU',
+            "GDG-Ikorodu",
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 24.0,
+              fontSize: 20.0,
             ),
           ),
-          accountEmail: InkWell(
-            child: Text(
-              'www.gdgikorodu.com',
-              style: TextStyle(
-//                  color: Colors.blueAccent,
-                  decoration: TextDecoration.underline,
-                  fontSize: 18.0),
-            ),
-            onTap: () => launch('https://gdgikorodu.com'),
-          ),
-          currentAccountPicture: Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                fit: BoxFit.contain,
-                image: AssetImage('assets/images/gdg-logo.jpg'),
-              ),
+          accountEmail: Text(
+            "gdgikorodu.com",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+//              fontSize: 20.0,
             ),
           ),
+          currentAccountPicture: CircleAvatar(
+            backgroundColor: Theme.of(context).platform == TargetPlatform.iOS
+                ? Colors.blue
+                : Colors.white,
+            child: Image.asset('assets/images/gdg-logo.jpg'),
+          ),
+        ),
+        Divider(
+          thickness: 2.0,
         ),
         ListTile(
           leading: Icon(Icons.home),
@@ -60,7 +90,7 @@ class MyDrawerState extends State<MyDrawer> {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           onTap: () {
-            GdgHome();
+            Navigator.pop(context);
           },
         ),
         ListTile(
@@ -84,7 +114,14 @@ class MyDrawerState extends State<MyDrawer> {
             'Blog',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => BlogPage(),
+              ),
+            );
+          },
         ),
         Divider(
           thickness: 2.0,
